@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable  react/destructuring-assignment */
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
