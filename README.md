@@ -23,9 +23,7 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [heroku]()👈
-
-Check the live demo [netlify]()👈
+Check the live demo [netlify](https://glittering-taffy-db6447.netlify.app)👈
 
 ## Getting Started
 
