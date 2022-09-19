@@ -23,7 +23,7 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [netlify](bookstore-app-mv.netlify.app)👈
+Check the live demo [netlify](https://bookstore-app-mv.netlify.app/)👈
 
 ## Getting Started
 
