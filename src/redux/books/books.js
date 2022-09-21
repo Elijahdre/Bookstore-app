@@ -2,7 +2,23 @@
 const ADD_BOOK = 'bookstore-app/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore-app/books/REMOVE_BOOK';
 
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    title: 'THE ANIMAL KINGDOM',
+    author: 'Andre Gravenberg',
+  },
+  {
+    id: 2,
+    title: 'THREE CROWNS',
+    author: 'Memphis Depay',
+  },
+  {
+    id: 3,
+    title: 'DO NOT CRY',
+    author: 'Sugar Mary',
+  },
+];
 
 export const addBook = (book) => ({
   type: ADD_BOOK,
