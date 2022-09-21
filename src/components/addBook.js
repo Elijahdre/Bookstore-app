@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 function addBook() {
+  const bookList = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const [state, setState] = 
+
+
   return (
     <div className="form-inputs">
       <h1>ADD A NEW BOOK</h1>
