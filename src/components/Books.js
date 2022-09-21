@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable  react/destructuring-assignment */
 import React from 'react';
+import Book from './Book'
 
 function Books(props) {
+
+  const { bookList } = props;
+
   return (
-    <div className="book-container">
-      <h2 className="book-title">{props.title}</h2>
-      <p className="book-author">{props.author}</p>
-      <button type="button" className="remove-btn">Remove</button>
+    <div>
+      {bookList.map((book) => (
+        <Book key={book.id} title = {book.title} author = {book.author} id = {book.id} />
+
+      ))}
+      
     </div>
   );
 }
