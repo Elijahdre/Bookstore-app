@@ -12,7 +12,7 @@ const reduceCategories = (state = initialState, action) => {
     // do reducer stuff
     case CHECK_STATUS:
       return 'Under Construction';
-    default: 
+    default:
       return state;
   }
 };
