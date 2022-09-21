@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-function Book({title, author, id}) {
+function Book({ title, author, id }) {
   const dispatch = useDispatch();
 
   const deleteBook = (event) => {
