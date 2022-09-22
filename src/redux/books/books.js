@@ -1,19 +1,12 @@
 import api from '../api';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 // Actions
 const ADD_BOOK = 'bookstore-app/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore-app/books/REMOVE_BOOK';
 
 const initialState = [];
 
-export const addBook = (book) => ({
-  type: ADD_BOOK,
-  payload: book,
-});
-
-export const removeBook = (index) => ({
-  type: REMOVE_BOOK,
-  payload: index,
-});
+const adBook = 
 
 const reduceBook = (state = initialState, action) => {
   switch (action.type) {
