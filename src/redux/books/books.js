@@ -1,3 +1,4 @@
+import api from '../api';
 // Actions
 const ADD_BOOK = 'bookstore-app/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore-app/books/REMOVE_BOOK';
