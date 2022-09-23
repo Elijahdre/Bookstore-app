@@ -39,7 +39,7 @@ function AddBook() {
 
   return (
     <div className="Add-book">
-      <h1 className='form-heading'>ADD A NEW BOOK</h1>
+      <h1 className="form-heading">ADD A NEW BOOK</h1>
       <form className="add-form" onSubmit={submit}>
         <input type="text" name="title" placeholder="Book-Title" value={state.title} onChange={read} />
         <input type="text" name="author" placeholder="Book-Author" value={state.author} onChange={read} />
