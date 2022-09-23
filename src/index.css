@@ -13,6 +13,47 @@ body {
 
 a {
   text-decoration: none;
+  color: #121212;
+  opacity: 0.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  background-color: #ffff;
+  width: 87.5rem;
+  height: 5.938rem;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 5rem;
+}
+
+header h1 {
+  font-weight: bold;
+  color: #0290ff;
+  font-size: 1.875rem;
+}
+
+header nav {
+  display: flex;
+  align-self: center;
+  margin-right: 5rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 2.5rem;
+  letter-spacing: 1.9px;
+  font-size: 0.813rem;
+}
+
+a.active {
+  opacity: 1;
 }
 
 .add-form {

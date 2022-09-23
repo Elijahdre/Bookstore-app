@@ -1,11 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
-  return (
-    <div>
+const Navbar = () =>
+// const links = [
+//   {
+//     id: 1,
+//     path: '/',
+//     text: 'Books',
+//   },
+//   {
+//     id: 2,
+//     path: '/categories',
+//     text: 'Categories',
+//   },
+// ];
+
+  (
+    <header>
+      <h1>Bookstore CMS</h1>
       <nav>
-        <h1>Bookstore CMS</h1>
+
         <ul>
           <li>
             <Link to="/Book">Book</Link>
@@ -15,7 +29,6 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
-}
 export default Navbar;

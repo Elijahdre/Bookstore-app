@@ -24,7 +24,7 @@ function AddBook() {
     if (state.title && state.author) {
       dispatch(
         addBook({
-          item_id: Math.floor(Math.random() * 100),
+          item_id: uuidv4(),
           title: state.title,
           author: state.author,
           category: 'Action',
