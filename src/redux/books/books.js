@@ -44,7 +44,7 @@ const reduceBook = (state = initialState, action) => {
       return action.payload;
 
     case 'bookstore-app/books/REMOVE_BOOK/fulfilled':
-      return [...state.filter((item) => item.id !== action.payload)];
+      return state.filter((item) => item.id !== action.payload);
     default:
       return state;
   }
