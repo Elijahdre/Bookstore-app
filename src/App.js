@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './index.css';
 import Books from './components/Books';
 import Navbar from './components/Navbar';
 import Categories from './components/Categories';
