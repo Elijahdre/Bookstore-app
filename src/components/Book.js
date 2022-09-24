@@ -15,15 +15,17 @@ const Book = ({ title, author, id }) => {
   return (
     <>
       <div className="book-item">
-        <h2 className="book-title">{title}</h2>
-        <p className="">{author}</p>
-        <span className="book-author">Elijah Odjegba</span>
-        <div className="links-container">
-          <ul>
-            <li><button type="button" className="btn-1 line">Comments</button></li>
-            <li><button type="button" className="btn-1 line">Edit</button></li>
-            <li><button type="button" className="btn-1" onClick={deleteBook} value={id}>Remove</button></li>
-          </ul>
+        <div>
+          <h2 className="book-title">{title}</h2>
+          <p className="">{author}</p>
+          <span className="book-author">Elijah Odjegba</span>
+          <div className="links-container">
+            <ul>
+              <li><button type="button" className="btn-1 line">Comments</button></li>
+              <li><button type="button" className="btn-1 line">Edit</button></li>
+              <li><button type="button" className="btn-1" onClick={deleteBook} value={id}>Remove</button></li>
+            </ul>
+          </div>
         </div>
         <div className="progress">
           <CircularProgressbar
