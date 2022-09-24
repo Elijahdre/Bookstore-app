@@ -43,6 +43,19 @@ const AddBook = () => {
       <form className="add-form" onSubmit={submit}>
         <input type="text" name="title" placeholder="Book-Title" value={state.title} onChange={read} />
         <input type="text" name="author" placeholder="Book-Author" value={state.author} onChange={read} />
+        <select
+          name="category"
+          key="book-category"
+          onChange={read}
+          value={state.category}
+        >
+          <option value="" hidden>Category</option>
+          <option value="Action">Action</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Inspiration">Inspiration</option>
+          <option value="Business">Business</option>
+        </select>
         <button type="submit">Add</button>
       </form>
     </div>
