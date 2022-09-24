@@ -2,10 +2,10 @@
 
 * {
   margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   font-family: 'Roboto Slab', sans-serif;
   background-color: rgba(0, 0, 0, 0.05);
   overflow-x: hidden;
@@ -27,6 +27,17 @@ header {
   height: 5.938rem;
   border-bottom: 1px solid #e8e8e8;
   padding: 0 5rem;
+}
+
+.user-container {
+  position: absolute;
+  cursor: pointer;
+  right: 17%;
+  font-size: 1rem;
+  color: #0290ff;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  padding: 2px 5px;
 }
 
 header h1 {

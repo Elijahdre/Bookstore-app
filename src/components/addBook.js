@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
-function AddBook() {
+const AddBook = () => {
   const dispatch = useDispatch();
   const [state, setState] = useState({
     title: '',
@@ -47,5 +47,5 @@ function AddBook() {
       </form>
     </div>
   );
-}
+};
 export default AddBook;
