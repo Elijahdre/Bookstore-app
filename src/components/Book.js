@@ -1,8 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { removeBook } from '../redux/books/books';
 
-function Book({ title, author, id }) {
+const Book = ({ title, author, id }) => {
   const dispatch = useDispatch();
 
   const deleteBook = (event) => {
@@ -12,12 +14,41 @@ function Book({ title, author, id }) {
 
   return (
     <>
-      <div className="books">
+      <div className="book-item">
         <h2 className="book-title">{title}</h2>
-        <p className="book-author">{author}</p>
-        <button type="button" className="remove-btn" onClick={deleteBook} value={id}>Remove</button>
+        <p className="">{author}</p>
+        <span className="book-author">Elijah Odjegba</span>
+        <div className="links-container">
+          <ul>
+            <li><button type="button" className="btn-1 line">Comments</button></li>
+            <li><button type="button" className="btn-1 line">Edit</button></li>
+            <li><button type="button" className="btn-1" onClick={deleteBook} value={id}>Remove</button></li>
+          </ul>
+        </div>
+        <div className="progress">
+          <CircularProgressbar
+            className="progressBar"
+            variant="determinate"
+            color="primary"
+            sx={{
+              width: 50,
+            }}
+            value={50}
+          />
+          <div className="numerics">
+            <span className="number">50%</span>
+            <span className="completed">completed</span>
+          </div>
+        </div>
+        <div className="view-progress">
+          <span className="chapter-title">Current chapter</span>
+          <h3 className="chapter-number">Chapter 10</h3>
+          <button type="button" className="btn-2">
+            Update progress
+          </button>
+        </div>
       </div>
     </>
   );
-}
+};
 export default Book;
