@@ -23,8 +23,6 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [heroku]()👈
-
 Check the live demo [netlify]()👈
 
 ## Getting Started
