@@ -16,14 +16,12 @@
 - [x] Code Editor: VS Code
 
 ## Website Mockup 📱 💻 🖥️
-![app_screenshot]()
+![bookstore](https://user-images.githubusercontent.com/47558964/212527758-b112a701-defc-4135-82b7-509f19b0c6bb.PNG)
 
-## Screenshots 📸
-Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [netlify]()👈
+Check the live demo [netlify](https://bookstore-app-mv.netlify.app/)👈
 
 ## Getting Started
 
